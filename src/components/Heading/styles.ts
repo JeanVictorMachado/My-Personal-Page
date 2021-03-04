@@ -1,5 +1,4 @@
 import styled, { css, keyframes } from 'styled-components'
-import theme from 'styles/theme'
 
 const animate = keyframes`
   0% {
