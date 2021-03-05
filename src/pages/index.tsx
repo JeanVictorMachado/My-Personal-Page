@@ -7,6 +7,8 @@ import WrapperMyImage from '../components/WrapperMyImage'
 import AboutMe from '../components/AboutMe'
 import WrapperProjects from '../components/WrapperProjects'
 import ContactMe from '../components/ContactMe'
+import Footer from '../components/Footer'
+import Copyright from '../components/Copyright'
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
         <WrapperProjects />
         <ContactMe />
       </S.Wrapper>
+      <Footer />
+      <Copyright />
     </GlobalProvider>
   )
 }

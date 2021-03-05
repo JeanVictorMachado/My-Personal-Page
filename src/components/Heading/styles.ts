@@ -30,6 +30,7 @@ export const Logo = styled.h2`
   ${({ theme }) => css`
     color: ${theme.colors.white};
     font-size: 22px;
+    margin-top: 1.3rem;
 
     > span {
       color: ${theme.colors.primary};
