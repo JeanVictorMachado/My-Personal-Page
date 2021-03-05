@@ -1,4 +1,4 @@
-import * as S from './stylesPages/HomePage'
+import * as S from '../styles/stylesPages/HomePage'
 
 import { GlobalProvider } from '../contexts/GlobalContext'
 
