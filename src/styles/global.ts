@@ -18,8 +18,8 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     ${({ theme }) => css`
-      background-color: ${theme.colors.black};
       font-family: ${theme.font.family};
+      background-color: ${theme.colors.black};
     `}
   }
 `
