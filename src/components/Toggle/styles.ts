@@ -13,8 +13,8 @@ export const ToggleLabel = styled.span`
 
 export const ToggleSwitch = styled(Switch).attrs(
   ({ theme }) => ({
-    onColor: theme.colors.info,
-    offColor: theme.colors.warning,
+    onColor: theme.colors.secondary,
+    offColor: theme.colors.primary,
     width: 30,
     height: 15,
   }),
