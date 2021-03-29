@@ -2,19 +2,19 @@ import React from 'react';
 
 import { Container, ToggleLabel, ToggleSwitch } from './styles';
 
-// type ToggleProps = {
-//   labelLeft: String
-//   labelRight: String
-//   checked: any
-//   onChange: () => void
-// }
+type ToggleProps = {
+  labelLeft?: String
+  labelRight?: String
+  checked?: any
+  onChange?: () => void
+}
 
 const Toggle = ({
   labelLeft,
   labelRight,
   checked,
   onChange,
-}) => (
+}: ToggleProps) => (
   <Container>
     <ToggleLabel>{labelLeft}</ToggleLabel>
     <ToggleSwitch
