@@ -1,5 +1,7 @@
-import { useState, useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import { GlobalContext } from '../../contexts/GlobalContext'
+
+import Toggle from '../Toggle'
 
 import * as S from './styles'
 
@@ -27,11 +29,19 @@ const Heading = () => {
 
       {!isActive && (
         <S.ImgOpenOrClose
-          src="img/cardapio.png"
-          alt="Open"
-          onClick={() => handleMenuIsOpen(true)}
+        src="img/cardapio.png"
+        alt="Open"
+        onClick={() => handleMenuIsOpen(true)}
         />
       )}
+
+      <S.ContainerToggle>
+        <img src="/img/sunWhite.png" alt="Sun" />
+        <div>
+          <Toggle />
+        </div>
+        <img src="/img/moonWhite.png" alt="Sun" />
+      </S.ContainerToggle>
 
       {isActive && (
         <S.NavigationMobile>

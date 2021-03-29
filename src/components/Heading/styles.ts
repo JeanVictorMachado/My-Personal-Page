@@ -2,7 +2,7 @@ import styled, { css, keyframes } from 'styled-components'
 
 const animate = keyframes`
   0% {
-    transform: translateX(100px);
+    transform: translateX(-100px);
     opacity: 0;
   }
   50% {
@@ -18,6 +18,8 @@ export const Wrapper = styled.header`
   height: 5rem;
   padding: 0 2rem;
 
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,6 +33,10 @@ export const Logo = styled.h2`
     color: ${theme.colors.white};
     font-size: 22px;
     margin-top: 1.3rem;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 
     > span {
       color: ${theme.colors.primary};
@@ -102,7 +108,6 @@ export const NavigationMobile = styled.div`
     @media (max-width: 1000px) {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
 
       padding: 2rem;
       width: 50%;
@@ -143,8 +148,28 @@ export const NavigationMobile = styled.div`
 
     @media (max-width: 750px) {
       flex-direction: column;
-      width: 100%;
+      width: 80%;
       margin-left: 0;
     }
   `}
 `
+
+export const ContainerToggle = styled.div`
+  ${() => css`
+
+    display: flex;
+    align-items: center;
+
+    > img {
+      width: 12px;
+      height: 12px;
+      margin-left: 3px;
+
+    }
+
+    > div {
+      margin-left: 3px;
+    }
+  `}
+
+`;
