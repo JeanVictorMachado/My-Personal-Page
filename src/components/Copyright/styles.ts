@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
 
     > span {
       font-size: 1.5rem;
+      color: #7F7F7F;
     }
   `}
 `

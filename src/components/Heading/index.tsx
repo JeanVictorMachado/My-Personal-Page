@@ -16,7 +16,7 @@ const Heading = () => {
   return (
     <S.Wrapper>
       <S.Logo>
-        JEAN <span>MACHADO</span>
+        {`< J`} <span>{`M`}</span> {`/ >`}
       </S.Logo>
 
       <S.Navigation>

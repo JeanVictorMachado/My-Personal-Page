@@ -23,12 +23,10 @@ const Footer = () => {
 
       <S.WrapperRight>
         <div>
-          <span>WHATSAPP:</span>
-          <span>43 996646913</span>
+          <span>WHATSAPP: 43 996646913</span>
         </div>
         <div>
-          <span>EMAIL:</span>
-          <span>jeanvictor_arq@gmail.com</span>
+          <span>EMAIL: jeanvictor_arq@gmail.com</span>
         </div>
       </S.WrapperRight>
     </S.Wrapper>

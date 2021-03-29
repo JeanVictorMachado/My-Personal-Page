@@ -11,12 +11,14 @@ const AboutMe = () => {
       <S.Content menuIsOpen={menuIsOpen}>
         <h2>QUEM SOU</h2>
         <p>
-          Sou Jean Machado, desenvolvedor de software full stack. Especialista
-          em Aplicativos e Games com mais de 10 anos de experiência em mídias
-          interativas. Possuo experiência com equipes multinacionais, além de
-          certificação compatível e 4 prêmios de reconhecimento nacional junto à
-          Funbites. Adoro desafios e acredito na transformação do mundo com o
-          poder da informação.
+          Muito prazer, sou Jean Victor Machado,
+          estudante de Desenvolvimento de Software na Trybe,
+          formado em Arquitetura e Urbanismo,
+          desde criança sou apaixonado em tecnologia e em
+          desenvolver soluções para projetos arquitetônicos,
+          hoje me sinto muito feliz e realizado por poder unir
+          essas duas coisas que amo na criação de softwares e
+          impactar pessoal.
         </p>
       </S.Content>
     </S.Wrapper>

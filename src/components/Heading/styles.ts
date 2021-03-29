@@ -95,54 +95,56 @@ export const ImgOpenOrClose = styled.img`
 `
 
 export const NavigationMobile = styled.div`
-  display: none;
-  margin-left: 50%;
+  ${({ theme }) => css`
+    display: none;
+    margin-left: 50%;
 
-  @media (max-width: 1000px) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    padding: 2rem;
-    width: 50%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    overflow: hidden;
-    position: fixed;
-
-    background: rgba(100, 0, 15, 0.9);
-
-    z-index: 999;
-
-    animation: ${animate} 0.5s;
-
-    > div {
-      flex: 1;
-
-      width: 100%;
-
+    @media (max-width: 1000px) {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      align-items: flex-end;
+
+      padding: 2rem;
+      width: 50%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      overflow: hidden;
+      position: fixed;
+
+      background: ${theme.colors.primary}dd;
+
+      z-index: 999;
+
+      animation: ${animate} 0.5s;
+
+      > div {
+        flex: 1;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      > img {
+        width: 20px;
+        cursor: pointer;
+      }
+
+      > a {
+        margin-top: 3rem;
+      }
     }
 
-    > img {
-      width: 20px;
-      cursor: pointer;
+    @media (max-width: 750px) {
+      flex-direction: column;
+      width: 100%;
+      margin-left: 0;
     }
-
-    > a {
-      margin-top: 3rem;
-    }
-  }
-
-  @media (max-width: 750px) {
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0;
-  }
+  `}
 `
