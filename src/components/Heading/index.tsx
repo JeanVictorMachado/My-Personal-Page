@@ -29,9 +29,9 @@ const Heading = () => {
 
       {!isActive && (
         <S.ImgOpenOrClose
-        src="img/cardapio.png"
-        alt="Open"
-        onClick={() => handleMenuIsOpen(true)}
+          src="img/cardapio.png"
+          alt="Open"
+          onClick={() => handleMenuIsOpen(true)}
         />
       )}
 
@@ -46,16 +46,28 @@ const Heading = () => {
       {isActive && (
         <S.NavigationMobile>
           <img
-            src="img/close.png"
+            src="img/close.svg"
             alt="Close"
             onClick={() => handleMenuIsOpen(false)}
           />
 
-          <div>
-            <S.Link href="#">Sobre mim</S.Link>
-            <S.Link href="#">Projetos</S.Link>
-            <S.Link href="#">Contacte-me</S.Link>
-          </div>
+          <S.ContainerLinks>
+            <div>
+              <S.Link href="#">Sobre mim</S.Link>
+            </div>
+            <div>
+              <S.Link href="#">Projetos</S.Link>
+            </div>
+            <div>
+              <S.Link href="#">Contacte-me</S.Link>
+            </div>
+            <div>
+              <S.Link href="#">Linkedin</S.Link>
+            </div>
+            <div>
+              <S.Link href="#">Github</S.Link>
+            </div>
+          </S.ContainerLinks>
         </S.NavigationMobile>
       )}
     </S.Wrapper>

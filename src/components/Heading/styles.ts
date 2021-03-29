@@ -93,7 +93,6 @@ export const ImgOpenOrClose = styled.img`
       display: block;
       width: 20px;
       color: ${theme.colors.white};
-      margin-top: 0.8rem;
 
       cursor: pointer;
     `}
@@ -103,13 +102,11 @@ export const ImgOpenOrClose = styled.img`
 export const NavigationMobile = styled.div`
   ${({ theme }) => css`
     display: none;
-    margin-left: 50%;
 
     @media (max-width: 1000px) {
       display: flex;
       flex-direction: column;
 
-      padding: 2rem;
       width: 50%;
       top: 0;
       bottom: 0;
@@ -119,30 +116,17 @@ export const NavigationMobile = styled.div`
       overflow: hidden;
       position: fixed;
 
-      background: ${theme.colors.primary}dd;
+      background: ${theme.colors.secondary}ee;
 
       z-index: 999;
 
       animation: ${animate} 0.5s;
 
-      > div {
-        flex: 1;
-
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-
       > img {
         width: 20px;
+        margin-left: 10px;
+        margin-top: 10px;
         cursor: pointer;
-      }
-
-      > a {
-        margin-top: 3rem;
       }
     }
 
@@ -171,5 +155,44 @@ export const ContainerToggle = styled.div`
       margin-left: 3px;
     }
   `}
-
 `;
+
+export const ContainerLinks = styled.div`
+${({ theme }) => css`
+    flex: 1;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > div {
+      width: 100%;
+      height: 50px;
+      margin-bottom: 2rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > a {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 500;
+        color: ${theme.colors.mainBg};
+      }
+
+      transition: background 0.4s;
+
+      &:hover {
+        background: ${theme.colors.mainBg}cc;
+
+        > a {
+          color: ${theme.colors.white};
+        }
+      }
+    }
+  `}
+`
