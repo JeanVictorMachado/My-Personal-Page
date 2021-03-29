@@ -13,18 +13,53 @@ import {
 const items = [
   {
     id: 1,
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+    title: 'My Dashboard',
+    link: 'https://github.com/JeanVictorMachado/My_Dashboard',
+    description: 'Aplicação que permite controlar as finanças de forma rápida e pratica, mostrando o resultado não só atravez de números mas também por gráficos facilitando ainda mais a visualização e entendimento.',
+    images: [
+      {
+        urlLogo: 'typescript.png',
+      },
+      {
+        urlLogo: 'icon-reactjs.png'
+      },
+      {
+        urlLogo: 'styledcomponents2.png'
+      }
+    ]
   },
   {
     id: 2,
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    title: 'TryBeer',
+    link: 'https://github.com/JeanVictorMachado/My_Dashboard',
+    description: 'Aplicação que permite controlar as finanças de forma rápida e pratica, mostrando o resultado não só atravez de números mas também por gráficos facilitando ainda mais a visualização e entendimento.',
+    images: [{
+      urlLogo: 'typescript.png',
+    }, {
+      urlLogo: 'icon-reactjs.png'
+    }]
   },
   {
     id: 3,
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    title: 'To Do List',
+    link: 'https://github.com/JeanVictorMachado/My_Dashboard',
+    description: 'Aplicação que permite controlar as finanças de forma rápida e pratica, mostrando o resultado não só atravez de números mas também por gráficos facilitando ainda mais a visualização e entendimento.',
+    images: [{
+      urlLogo: 'typescript.png',
+    }, {
+      urlLogo: 'icon-reactjs.png'
+    }]
+  },
+  {
+    id: 4,
+    title: 'Trivia',
+    link: 'https://github.com/JeanVictorMachado/My_Dashboard',
+    description: 'Aplicação que permite controlar as finanças de forma rápida e pratica, mostrando o resultado não só atravez de números mas também por gráficos facilitando ainda mais a visualização e entendimento.',
+    images: [{
+      urlLogo: 'typescript.png',
+    }, {
+      urlLogo: 'icon-reactjs.png'
+    }]
   }
 ]
 
@@ -61,22 +96,22 @@ const Example = (_props: any) => {
         <S.Wrapper>
           <S.ImgProject src="img/icon-computer-dashboard.png" />
           <S.WrapperInfos>
-            <h2>Name Project</h2>
+            <h2>{item.title}</h2>
             <div>
-              <a href="#">Icon / Ver Demo</a>
-              <a href="#">Icon / Ver Código</a>
+              <a href={item.link}>
+                <img src="img/github.png" alt="logo github"/>
+                Ver Código
+              </a>
             </div>
             <p>
-              GoBarber é uma aplicação com versão web, aplicativo mobile e API
-              própria. O objetivo é auxiliar os profissionais de serviços de
-              beleza a marcarem horário com seus respectivos clientes.
+              {item.description}
             </p>
             <section>
               <span>Tecnologias:</span>
               <div>
-                <img className="img1" src="img/icon-reactjs.png" />
-                <img className="img2" src="img/icon-nodejs2.webp" />
-                <img className="img3" src="img/icon-mongodb.png" />
+                {item.images.map((item, index) => (
+                  <img key={index} src={`img/${item.urlLogo}`} />
+                ))}
               </div>
             </section>
           </S.WrapperInfos>

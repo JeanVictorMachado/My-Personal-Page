@@ -45,7 +45,7 @@ export const WrapperInfos = styled.div`
     > h2 {
       color: ${theme.colors.white};
       font-size: 2.2rem;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
 
       @media (max-width: 1000px) {
         margin-bottom: 2rem;
@@ -54,18 +54,28 @@ export const WrapperInfos = styled.div`
 
     a {
       color: ${theme.colors.white};
+      text-decoration: none;
       font-size: 1.2rem;
-      border: 1px solid ${theme.colors.primary};
+      background-color: ${theme.colors.primary};
+      /* border: 1px solid ${theme.colors.primary}; */
       border-radius: 5px;
       padding: 0.5rem;
-      margin-right: 1rem;
       font-weight: 600;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > img {
+        width: 18px;
+        margin-right: 5px;
+      }
     }
 
     > p {
       color: ${theme.colors.white};
       font-size: 1.6rem;
-      margin-top: 2.5rem;
+      margin-top: 2rem;
       text-align: justify;
 
       @media (max-width: 1000px) {
@@ -100,28 +110,9 @@ export const WrapperInfos = styled.div`
         display: flex;
         align-items: center;
 
-        .img1 {
-          width: 50px;
-          height: 50px;
-          margin-right: 1rem;
-
-          @media (max-width: 1000px) {
-            width: 40px;
-            height: 40px;
-          }
-        }
-        .img2 {
-          width: 60px;
-          margin-right: 1rem;
-
-          @media (max-width: 1000px) {
-            width: 50px;
-            height: 50px;
-          }
-        }
-        .img3 {
-          width: 50px;
-          height: 50px;
+        > img {
+          width: 40px;
+          height: 40px;
           margin-right: 1rem;
 
           @media (max-width: 1000px) {
