@@ -1,14 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { Container, ToggleLabel, ToggleSwitch } from './styles';
+
+type ToggleProps = {
+  labelLeft: String
+  labelRight: String
+  checked: any
+  onChange: () => void
+}
 
 const Toggle = ({
   labelLeft,
   labelRight,
   checked,
   onChange,
-}) => (
+}: ToggleProps) => (
   <Container>
     <ToggleLabel>{labelLeft}</ToggleLabel>
     <ToggleSwitch
@@ -22,15 +28,3 @@ const Toggle = ({
 );
 
 export default Toggle;
-
-Toggle.defaultProps = {
-  labelLeft: '',
-  labelRight: '',
-};
-
-Toggle.propTypes = {
-  labelLeft: PropTypes.string,
-  labelRight: PropTypes.string,
-  checked: PropTypes.bool.isRequired,
-  onChange: PropTypes.func.isRequired,
-};
