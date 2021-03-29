@@ -162,11 +162,11 @@ ${({ theme }) => css`
     flex: 1;
 
     width: 100%;
+    margin-top: 75px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     > div {
       width: 100%;
@@ -180,7 +180,7 @@ ${({ theme }) => css`
       > a {
         margin: 0;
         font-size: 2rem;
-        font-weight: 500;
+        font-weight: 600;
         color: ${theme.colors.mainBg};
       }
 
