@@ -1,4 +1,6 @@
 import React, { useState, useContext } from 'react'
+import Link from 'next/link'
+
 import { GlobalContext } from '../../contexts/GlobalContext'
 
 import Toggle from '../Toggle'
@@ -13,6 +15,11 @@ const Heading = () => {
   const handleMenuIsOpen = (trueOrFalse: boolean) => {
     setIsActive(trueOrFalse)
     setMenuIsOpen(trueOrFalse)
+  }
+
+  const exitSideBar = () => {
+    setIsActive(false)
+    setMenuIsOpen(false)
   }
 
   return (
@@ -53,19 +60,36 @@ const Heading = () => {
 
           <S.ContainerLinks>
             <div>
-              <S.Link href="#">Sobre mim</S.Link>
+              <S.Link
+                href="#about-me"
+                onClick={ exitSideBar }
+              >
+                Sobre mim
+              </S.Link>
             </div>
             <div>
-              <S.Link href="#">Projetos</S.Link>
+              <S.Link
+                href="#projects"
+                onClick={ exitSideBar }
+              >
+                  Projetos
+              </S.Link>
             </div>
             <div>
-              <S.Link href="#">Contacte-me</S.Link>
+              <S.Link
+                href="#contact-me"
+                onClick={ exitSideBar }
+              >
+                Contacte-me
+              </S.Link>
             </div>
             <div>
-              <S.Link href="#">Linkedin</S.Link>
+              <S.Link href="https://www.linkedin.com/in/jean-machado-full-stack/">
+                Linkedin
+              </S.Link>
             </div>
             <div>
-              <S.Link href="#">Github</S.Link>
+              <S.Link href="https://github.com/JeanVictorMachado">Github</S.Link>
             </div>
           </S.ContainerLinks>
         </S.NavigationMobile>

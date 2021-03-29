@@ -6,7 +6,7 @@ const AboutMe = () => {
 
   return (
     <S.Wrapper>
-      <h1>Fale Comigo</h1>
+      <h1 id="contact-me">Fale Comigo</h1>
       <S.Form >
         <InputForm
           type={"text"}

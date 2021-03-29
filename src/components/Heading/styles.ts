@@ -124,8 +124,8 @@ export const NavigationMobile = styled.div`
 
       > img {
         width: 20px;
-        margin-left: 10px;
-        margin-top: 10px;
+        margin-left: 20px;
+        margin-top: 20px;
         cursor: pointer;
       }
     }
@@ -162,7 +162,7 @@ ${({ theme }) => css`
     flex: 1;
 
     width: 100%;
-    margin-top: 75px;
+    margin-top: 40%;
 
     display: flex;
     flex-direction: column;

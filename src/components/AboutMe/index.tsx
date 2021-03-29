@@ -9,7 +9,7 @@ const AboutMe = () => {
   return (
     <S.Wrapper>
       <S.Content menuIsOpen={menuIsOpen}>
-        <h2>QUEM SOU</h2>
+        <h2 id="about-me">QUEM SOU</h2>
         <p>
           Muito prazer, sou Jean Victor Machado,
           estudante de Desenvolvimento de Software na Trybe,

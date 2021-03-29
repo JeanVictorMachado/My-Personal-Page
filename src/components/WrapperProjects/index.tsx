@@ -11,7 +11,7 @@ const WrapperProjects = () => {
 
   return (
     <S.Wrapper menuIsOpen={menuIsOpen}>
-      <h2>PROJETOS</h2>
+      <h2 id="projects">PROJETOS</h2>
 
       <S.Content>
         <Example />
