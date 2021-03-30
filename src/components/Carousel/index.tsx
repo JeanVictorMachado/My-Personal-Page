@@ -13,7 +13,29 @@ import {
 const items = [
   {
     id: 1,
+    title: 'TryBeer',
+    imgCapa: 'capa-trybeer.png',
+    link: 'https://github.com/JeanVictorMachado',
+    description: 'Aplicação para delivery de bebidas, feita para compra ou venda de produtos, é possível se ter acesso a todas as etapas da compra o mesmo acontece para vendas onde o admin pode até mesmo marca se a bebida já foi entregue.',
+    images: [
+      {
+        urlLogo: 'icon-reactjs.png'
+      },
+      {
+        urlLogo: 'styledcomponents2.png'
+      },
+      {
+        urlLogo: 'icon-nodejs2.webp'
+      },
+      {
+        urlLogo: 'mysql-3.svg'
+      }
+    ]
+  },
+  {
+    id: 2,
     title: 'My Dashboard',
+    imgCapa: 'icon-computer-dashboard.png',
     link: 'https://github.com/JeanVictorMachado/My_Dashboard',
     description: 'Aplicação que permite controlar as finanças de forma rápida e pratica, mostrando o resultado não só atravez de números mas também por gráficos facilitando ainda mais a visualização e entendimento.',
     images: [
@@ -27,17 +49,6 @@ const items = [
         urlLogo: 'styledcomponents2.png'
       }
     ]
-  },
-  {
-    id: 2,
-    title: 'TryBeer',
-    link: 'https://github.com/JeanVictorMachado/My_Dashboard',
-    description: 'Aplicação que permite controlar as finanças de forma rápida e pratica, mostrando o resultado não só atravez de números mas também por gráficos facilitando ainda mais a visualização e entendimento.',
-    images: [{
-      urlLogo: 'typescript.png',
-    }, {
-      urlLogo: 'icon-reactjs.png'
-    }]
   },
   {
     id: 3,
@@ -94,7 +105,7 @@ const Example = (_props: any) => {
         onExited={() => setAnimating(false)}
       >
         <S.Wrapper>
-          <S.ImgProject src="img/icon-computer-dashboard.png" />
+          <S.ImgProject src={`img/${item.imgCapa}`} />
           <S.WrapperInfos>
             <h2>{item.title}</h2>
             <div>

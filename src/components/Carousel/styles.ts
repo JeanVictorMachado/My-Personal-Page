@@ -88,6 +88,10 @@ export const WrapperInfos = styled.div`
       width: 100%;
       margin-top: 1.5rem;
 
+      @media (max-width: 1000px) {
+        margin-bottom: 1rem;
+      }
+
       > span {
         color: ${theme.colors.white};
         font-size: 1.6rem;
@@ -114,6 +118,7 @@ export const WrapperInfos = styled.div`
           width: 40px;
           height: 40px;
           margin-right: 1rem;
+          border-radius: 7px;
 
           @media (max-width: 1000px) {
             width: 40px;
