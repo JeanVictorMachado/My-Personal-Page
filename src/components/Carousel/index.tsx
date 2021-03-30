@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import DbProjects from '../../../bdprojects.json'
+
 import * as S from './styles'
 
 import {
@@ -10,80 +12,7 @@ import {
   CarouselCaption
 } from 'reactstrap'
 
-const items = [
-  {
-    id: 1,
-    title: 'TryBeer',
-    imgCapa: 'capa-trybeer.png',
-    link: 'https://github.com/JeanVictorMachado',
-    description: 'Aplicação para delivery de bebidas, no app é possível se ter acesso a todas as etapas da compra o mesmo acontece para vendas onde o admin pode até mesmo marca se a bebida já foi entregue ao cliente.',
-    images: [
-      {
-        urlLogo: 'icon-reactjs.png'
-      },
-      {
-        urlLogo: 'styledcomponents2.png'
-      },
-      {
-        urlLogo: 'icon-nodejs2.webp'
-      },
-      {
-        urlLogo: 'mysql-3.svg'
-      }
-    ]
-  },
-  {
-    id: 2,
-    title: 'My Dashboard',
-    imgCapa: 'icon-computer-dashboard.png',
-    link: 'https://github.com/JeanVictorMachado/My_Dashboard',
-    description: 'Aplicação que permite controlar as finanças de forma rápida e pratica, mostrando o resultado não só atravez de números mas também por gráficos facilitando ainda mais a visualização e entendimento.',
-    images: [
-      {
-        urlLogo: 'typescript.png',
-      },
-      {
-        urlLogo: 'icon-reactjs.png'
-      },
-      {
-        urlLogo: 'styledcomponents2.png'
-      }
-    ]
-  },
-  {
-    id: 3,
-    title: 'ToDo List',
-    imgCapa: 'capa-todolist.png',
-    link: 'https://github.com/JeanVictorMachado/ToDo_List_CRUD',
-    description: 'Aplicativo para listar tarefas, com esse app é possível adicionar, atualizar ou remover uma tarefa, e ainda buscar por dia, mês e ano, agora não tem mais desculpa para atrasos.',
-    images: [
-      {
-        urlLogo: 'icon-reactjs.png'
-      },
-      {
-        urlLogo: 'icon-nodejs2.webp'
-      },
-      {
-        urlLogo: 'icon-mongodb.png'
-      }
-    ]
-  },
-  {
-    id: 4,
-    title: 'Trivia',
-    imgCapa: 'capa-trivia.png',
-    link: 'https://github.com/JeanVictorMachado/Trivia_App',
-    description: 'Um app de perguntas e respostas incrivel, escolha o tema e o nível das perguntas, tente acertar o máximo possível para somar mais pontos e ser o primeiro do ranking.',
-    images: [
-      {
-        urlLogo: 'icon-reactjs.png'
-      },
-      {
-        urlLogo: 'redux-logo-landscape.png'
-      }
-    ]
-  }
-]
+const { data } = DbProjects
 
 const Example = (_props: any) => {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -91,13 +20,13 @@ const Example = (_props: any) => {
 
   const next = () => {
     if (animating) return
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1
+    const nextIndex = activeIndex === data.length - 1 ? 0 : activeIndex + 1
     setActiveIndex(nextIndex)
   }
 
   const previous = () => {
     if (animating) return
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1
+    const nextIndex = activeIndex === 0 ? data.length - 1 : activeIndex - 1
     setActiveIndex(nextIndex)
   }
 
@@ -106,7 +35,7 @@ const Example = (_props: any) => {
     setActiveIndex(newIndex)
   }
 
-  const slides = items.map((item) => {
+  const slides = data.map((item) => {
     return (
       <CarouselItem
         className="custom-tag"
@@ -154,7 +83,7 @@ const Example = (_props: any) => {
       </style>
       <Carousel activeIndex={activeIndex} next={next} previous={previous}>
         <CarouselIndicators
-          items={items}
+          items={data}
           activeIndex={activeIndex}
           onClickHandler={goToIndex}
         />
