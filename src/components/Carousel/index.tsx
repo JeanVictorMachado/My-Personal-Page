@@ -16,7 +16,7 @@ const items = [
     title: 'TryBeer',
     imgCapa: 'capa-trybeer.png',
     link: 'https://github.com/JeanVictorMachado',
-    description: 'Aplicação para delivery de bebidas, feita para compra ou venda de produtos, é possível se ter acesso a todas as etapas da compra o mesmo acontece para vendas onde o admin pode até mesmo marca se a bebida já foi entregue.',
+    description: 'Aplicação para delivery de bebidas, no app é possível se ter acesso a todas as etapas da compra o mesmo acontece para vendas onde o admin pode até mesmo marca se a bebida já foi entregue ao cliente.',
     images: [
       {
         urlLogo: 'icon-reactjs.png'
