@@ -51,10 +51,10 @@ export const WrapperLeft = styled.div`
       color: ${theme.colors.white};
       font-size: 2.3rem;
       margin: 0;
-      margin-bottom: 1rem;
+      /* margin-bottom: 1rem; */
 
       @media (max-width: 1000px) {
-        margin-bottom: 0.5rem;
+        /* margin-bottom: 0.5rem; */
         font-size: 1.8rem;
       }
 
@@ -68,21 +68,7 @@ export const WrapperLeft = styled.div`
       align-items: center;
       justify-content: space-around;
 
-      .img1 {
-        width: 62px;
-
-        @media (max-width: 1000px) {
-          width: 52px;
-        }
-      }
-      .img2 {
-        width: 78px;
-
-        @media (max-width: 1000px) {
-          width: 67px;
-        }
-      }
-      .img3 {
+      img {
         width: 60px;
 
         @media (max-width: 1000px) {
@@ -99,13 +85,13 @@ export const ContentQuote = styled.section`
     border-radius: 3px;
     padding: 10px;
 
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 
     display: flex;
     flex-direction: column;
 
     @media (max-width: 1000px) {
-      margin-top: 1rem;
+      /* margin-top: 1rem; */
     }
 
     .quote {

@@ -1,10 +1,30 @@
 import { GlobalContext } from '../../contexts/GlobalContext'
 import { useContext } from 'react'
 
+import CarouselInitial from '../CarouselInitial'
+
 import * as S from './styles'
 
 const WrapperMyImage = () => {
   const { menuIsOpen } = useContext(GlobalContext)
+
+  const data = [
+    {
+      img1: 'img/icon-reactjs.png',
+      img2: 'img/icon-nodejs2.webp',
+      img3: 'img/icon-mongodb.png',
+    },
+    {
+      img3: 'img/icon-mongodb.png',
+      img2: 'img/icon-nodejs2.webp',
+      img1: 'img/icon-reactjs.png',
+    },
+    {
+      img3: 'img/icon-mongodb.png',
+      img2: 'img/icon-nodejs2.webp',
+      img1: 'img/icon-reactjs.png',
+    }
+  ]
 
   return (
     <S.Wrapper menuIsOpen={menuIsOpen}>
@@ -12,9 +32,9 @@ const WrapperMyImage = () => {
         <h2>Olá, sou Jean Machado</h2>
         <p>Desenvolvedor Full-Stack</p>
         <div>
-          <img className="img1" src="img/icon-reactjs.png" alt="" />
-          <img className="img2" src="img/icon-nodejs2.webp" alt="" />
-          <img className="img3" src="img/icon-mongodb.png" alt="" />
+
+          <CarouselInitial data={ data } />
+
         </div>
         <S.ContentQuote>
           <span className="quote">
