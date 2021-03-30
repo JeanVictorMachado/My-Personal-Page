@@ -120,6 +120,8 @@ export const WrapperInfos = styled.div`
           margin-right: 1rem;
           border-radius: 7px;
 
+          box-shadow: 0 0 5px black;
+
           @media (max-width: 1000px) {
             width: 40px;
             height: 40px;

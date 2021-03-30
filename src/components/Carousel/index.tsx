@@ -52,25 +52,36 @@ const items = [
   },
   {
     id: 3,
-    title: 'To Do List',
-    link: 'https://github.com/JeanVictorMachado/My_Dashboard',
-    description: 'Aplicação que permite controlar as finanças de forma rápida e pratica, mostrando o resultado não só atravez de números mas também por gráficos facilitando ainda mais a visualização e entendimento.',
-    images: [{
-      urlLogo: 'typescript.png',
-    }, {
-      urlLogo: 'icon-reactjs.png'
-    }]
+    title: 'ToDo List',
+    imgCapa: 'capa-todolist.png',
+    link: 'https://github.com/JeanVictorMachado/ToDo_List_CRUD',
+    description: 'Aplicativo para listar tarefas, com esse app é possível adicionar, atualizar ou remover uma tarefa, e ainda buscar por dia, mês e ano, agora não tem mais desculpa para atrasos.',
+    images: [
+      {
+        urlLogo: 'icon-reactjs.png'
+      },
+      {
+        urlLogo: 'icon-nodejs2.webp'
+      },
+      {
+        urlLogo: 'icon-mongodb.png'
+      }
+    ]
   },
   {
     id: 4,
     title: 'Trivia',
-    link: 'https://github.com/JeanVictorMachado/My_Dashboard',
-    description: 'Aplicação que permite controlar as finanças de forma rápida e pratica, mostrando o resultado não só atravez de números mas também por gráficos facilitando ainda mais a visualização e entendimento.',
-    images: [{
-      urlLogo: 'typescript.png',
-    }, {
-      urlLogo: 'icon-reactjs.png'
-    }]
+    imgCapa: 'capa-trivia.png',
+    link: 'https://github.com/JeanVictorMachado/Trivia_App',
+    description: 'Um app de perguntas e respostas incrivel, escolha o tema e o nível das perguntas, tente acertar o máximo possível para somar mais pontos e ser o primeiro do ranking.',
+    images: [
+      {
+        urlLogo: 'icon-reactjs.png'
+      },
+      {
+        urlLogo: 'redux-logo-landscape.png'
+      }
+    ]
   }
 ]
 
