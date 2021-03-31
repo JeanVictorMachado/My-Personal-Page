@@ -15,14 +15,14 @@ const WrapperMyImage = () => {
       img3: 'img/icon-mongodb.png',
     },
     {
-      img3: 'img/icon-mongodb.png',
-      img2: 'img/icon-nodejs2.webp',
-      img1: 'img/icon-reactjs.png',
+      img2: 'img/typescript2.png',
+      img3: 'img/my-sql.jpg',
+      img1: 'img/nextjs2.png',
     },
     {
-      img3: 'img/icon-mongodb.png',
-      img2: 'img/icon-nodejs2.webp',
-      img1: 'img/icon-reactjs.png',
+      img3: 'img/redux2.png',
+      img2: 'img/jest.jpg',
+      img1: 'img/javascript.jpg',
     }
   ]
 

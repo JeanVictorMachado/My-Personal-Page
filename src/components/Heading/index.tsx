@@ -24,9 +24,9 @@ const Heading = () => {
 
   return (
     <S.Wrapper>
-      <S.Logo>
+      {/* <S.Logo>
         {`< J`} <span>{`M`}</span> {`/ >`}
-      </S.Logo>
+      </S.Logo> */}
 
       <S.Navigation>
         <S.Link href="#">Sobre mim</S.Link>

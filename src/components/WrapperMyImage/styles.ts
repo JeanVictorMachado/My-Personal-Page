@@ -70,6 +70,7 @@ export const WrapperLeft = styled.div`
 
       img {
         width: 60px;
+        border-radius: 50%;
 
         @media (max-width: 1000px) {
           width: 50px;
