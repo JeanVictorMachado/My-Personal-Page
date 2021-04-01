@@ -59,7 +59,7 @@ export const WrapperLeft = styled.div`
       }
 
       > a {
-        color: ${theme.colors.white};
+        color: ${theme.colors.gray};
         text-decoration: none;
 
         font-size: 2rem;
@@ -96,7 +96,7 @@ export const WrapperRight = styled.div`
     div {
 
       > span {
-        color: ${theme.colors.white};
+        color: ${theme.colors.gray};
         margin-right: 2rem;
 
         font-size: 2rem;

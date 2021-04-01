@@ -15,7 +15,7 @@ export default {
     white: '#FAFAFA',
     black: '#000011',
     lightGray: '#EAEAEA',
-    gray: '#8F8F8F',
+    gray: '#FAFAFA',
     darkGray: '#2E2F42'
   }
 }

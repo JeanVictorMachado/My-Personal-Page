@@ -48,21 +48,25 @@ const Heading = () => {
 
       {!isActive && (
         <S.ImgOpenOrClose
-          src="img/cardapio.png"
+          src={isTheme ? "img/cardapioBlack.png" : "img/cardapio.png"}
           alt="Open"
           onClick={() => handleMenuIsOpen(true)}
         />
       )}
 
       <S.ContainerToggle>
-        <img src="/img/sunWhite.png" alt="Sun" />
+        {isTheme
+          ? <img src="/img/sun.png" alt="Sun" />
+          : <img src="/img/sunWhite.png" alt="Sun" />}
         <div>
           <Toggle
             checked={ isTheme }
             onChange={ () => setIsTheme(!isTheme) }
           />
         </div>
-        <img src="/img/moonWhite.png" alt="Sun" />
+        {isTheme
+          ? <img src="/img/moon.png" alt="Sun" />
+          : <img src="/img/moonWhite.png" alt="Sun" />}
       </S.ContainerToggle>
 
       {isActive && (

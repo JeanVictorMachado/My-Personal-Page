@@ -53,7 +53,7 @@ export const Form = styled.form`
       padding-top: 0.6rem;
       font-size: 1.5rem;
 
-      background: #E8E8E8;
+      background: #EDEDED;
 
       @media (max-width: 950px) {
         width: 100%;
