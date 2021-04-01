@@ -116,7 +116,7 @@ export const NavigationMobile = styled.div`
       overflow: hidden;
       position: fixed;
 
-      background: ${theme.colors.secondary}ee;
+      background: ${theme.colors.primary}ee;
 
       z-index: 999;
 

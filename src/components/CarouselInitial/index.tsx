@@ -31,17 +31,17 @@ const CarouselInitial = ({ data }: any) => {
     setActiveIndex(newIndex)
   }
 
-  const slides = data.map((item) => {
+  const slides = data.map((item, index) => {
     return (
       <CarouselItem
         className="custom-tag"
         tag="div"
-        key={item.id}
+        key={index}
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
       >
         <S.Wrapper>
-          <img src={item.img1} alt={item.img1} />
+          <img className="img1" src={item.img1} alt={item.img1} />
           <img src={item.img2} alt={item.img2} />
           <img src={item.img3} alt={item.img3} />
         </S.Wrapper>
@@ -55,7 +55,7 @@ const CarouselInitial = ({ data }: any) => {
         {`.custom-tag {
               max-width: 100%;
               height: 100%;
-              background: #000011;
+              //background: #000011;
               //background: red;
             }`}
       </style>

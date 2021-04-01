@@ -21,9 +21,13 @@ export const Indicators = styled.div`
   }
 
   .carousel-indicators li {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
+    ${({ theme }) => css`
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+
+      background-color: ${theme.colors.white};
+    `}
   }
 
   .carousel-control-next {
@@ -37,11 +41,22 @@ export const Indicators = styled.div`
   }
 
   .carousel-control-next-icon, .carousel-control-prev-icon {
-    width: 15px;
+    ${({ theme }) => css`
+      width: 15px;
+
+      span {
+        width: 50px;
+      }
+      filter: ${theme.colors.white};
+    `}
   }
 
   .kVcreX {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    ${({ theme }) => css`
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+
+      background: ${theme.colors.black};
+    `}
   }
 `

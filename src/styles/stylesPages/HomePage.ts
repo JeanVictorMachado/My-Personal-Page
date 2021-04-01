@@ -8,3 +8,11 @@ export const Wrapper = styled.div`
     background-color: ${theme.colors.black};
   `}
 `
+
+export const MainWrapper = styled.div`
+  ${({ theme }) => css`
+    width: 100%;
+
+    background-color: ${theme.colors.black};
+  `}
+`

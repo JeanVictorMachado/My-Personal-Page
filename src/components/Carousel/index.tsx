@@ -77,7 +77,7 @@ const Example = (_props: any) => {
         {`.custom-tag {
               max-width: 100%;
               height: 100%;
-              background: #000011;
+              //background: #000011;
               //background: red;
             }`}
       </style>

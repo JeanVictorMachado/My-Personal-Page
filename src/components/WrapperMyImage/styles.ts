@@ -108,7 +108,7 @@ export const ContentQuote = styled.section`
     }
 
     .create-quote {
-      color: ${theme.colors.lightGray};
+      color: ${theme.colors.white};
       font-size: 1.6rem;
     }
   `}
@@ -135,18 +135,16 @@ export const WrapperRight = styled.div`
 `
 
 export const WrapperEfect = styled.div<WrapperProps>`
-  /* ${({ menuIsOpen }) => css`
-    display: ${menuIsOpen ? 'none' : 'flex'};
-  `} */
+  ${({ theme }) => css`
+    width: 100%;
+    height: 60px;
+    background-image: ${`linear-gradient(transparent 0%, ${theme.colors.black}bb, ${theme.colors.black})`};
 
-  width: 100%;
-  height: 60px;
-  background-image: linear-gradient(transparent 0%, #000011bb, #000011);
+    position: absolute;
+    bottom: 0;
 
-  position: absolute;
-  bottom: 0;
-
-  @media (max-width: 1000px) {
-    height: 40px;
-  }
+    @media (max-width: 1000px) {
+      height: 40px;
+    }
+  `}
 `

@@ -1,16 +1,28 @@
-import React, { useState, useContext } from 'react'
-import Link from 'next/link'
-
+import React, { useState, useContext, useEffect } from 'react'
 import { GlobalContext } from '../../contexts/GlobalContext'
 
+import dark from '../../styles/themeDark';
+import light from '../../styles/themeLight';
 import Toggle from '../Toggle'
 
 import * as S from './styles'
 
 const Heading = () => {
   const { setMenuIsOpen } = useContext(GlobalContext)
-
   const [isActive, setIsActive] = useState(false)
+  const [isTheme, setIsTheme] = useState(false)
+
+  const { setStateTheme } = useContext(GlobalContext)
+
+  useEffect(() => {
+    if (isTheme) {
+      setStateTheme(light)
+      localStorage.setItem('@themePortifolio', JSON.stringify(light))
+    } else {
+      setStateTheme(dark)
+      localStorage.setItem('@themePortifolio', JSON.stringify(dark))
+    }
+  }, [isTheme])
 
   const handleMenuIsOpen = (trueOrFalse: boolean) => {
     setIsActive(trueOrFalse)
@@ -45,7 +57,10 @@ const Heading = () => {
       <S.ContainerToggle>
         <img src="/img/sunWhite.png" alt="Sun" />
         <div>
-          <Toggle />
+          <Toggle
+            checked={ isTheme }
+            onChange={ () => setIsTheme(!isTheme) }
+          />
         </div>
         <img src="/img/moonWhite.png" alt="Sun" />
       </S.ContainerToggle>
