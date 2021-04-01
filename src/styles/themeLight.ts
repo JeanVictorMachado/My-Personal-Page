@@ -12,7 +12,7 @@ export default {
     primary: '#F231A5',
     secondary: '#3CD3C1',
     mainBg: '#86C4D9',
-    white: 'black',
+    white: '#3D3D3D',
     black: '#E5F5F9',
     lightGray: '#EAEAEA',
     gray: '#FAFAFA',
