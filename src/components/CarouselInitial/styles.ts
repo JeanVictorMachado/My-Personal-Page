@@ -59,4 +59,10 @@ export const Indicators = styled.div`
       background: ${theme.colors.black};
     `}
   }
+
+  .styles__Wrapper-y51egt-0 {
+    img {
+      box-shadow: 0 0 3px black;
+    }
+  }
 `

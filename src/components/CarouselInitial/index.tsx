@@ -41,7 +41,7 @@ const CarouselInitial = ({ data }: any) => {
         onExited={() => setAnimating(false)}
       >
         <S.Wrapper>
-          <img className="img1" src={item.img1} alt={item.img1} />
+          <img src={item.img1} alt={item.img1} />
           <img src={item.img2} alt={item.img2} />
           <img src={item.img3} alt={item.img3} />
         </S.Wrapper>
