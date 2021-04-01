@@ -42,6 +42,11 @@ export const Form = styled.form`
       padding: 2rem 0 0 0;
     }
 
+    > input {
+      border: 1px solid ${theme.colors.primary};
+      background: #EDEDED;
+    }
+
     > textarea {
       width: 69%;
       height: 3.8rem;
@@ -54,6 +59,7 @@ export const Form = styled.form`
       font-size: 1.5rem;
 
       background: #EDEDED;
+      border: 1px solid ${theme.colors.primary};
 
       @media (max-width: 950px) {
         width: 100%;

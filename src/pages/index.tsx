@@ -14,7 +14,7 @@ import Footer from '../components/Footer'
 import Copyright from '../components/Copyright'
 
 export default function Home() {
-  const { stateTheme } = useContext(GlobalContext)
+  const { stateTheme, menuIsOpen } = useContext(GlobalContext)
 
   return (
     <ThemeProvider theme={ stateTheme }>
